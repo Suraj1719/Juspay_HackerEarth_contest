@@ -76,9 +76,11 @@ class TestClass {
         Queue<Integer>q=new LinkedList<>();
         q.add(dest);
         List<Integer>ans=new ArrayList<>();
+        Set<Integer>vis=new HashSet<>();
         while(!q.isEmpty()){
             int node=q.peek();
             q.poll();
+            vis.add(node);
             //Queue<Integer>temp=new LinkedList<>();
             List<Integer>cur=from_to_time.get(node);
             //boolean flag=false;
@@ -91,7 +93,7 @@ class TestClass {
                     else ans.add(node);
                     // flag=true;
                     // break;
-                }else q.add(x);
+                }else if(!vis.contains(x)) q.add(x);
             }
             //if(flag==false)
 

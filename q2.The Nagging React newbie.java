@@ -11,7 +11,22 @@ Input :
 9 5
 7
 9
-  output: 2 7
+output: 2 7
+
+Input : 4
+1
+2
+3
+4
+4
+1 4
+2 3
+3 4
+1 3
+1
+4
+output :1 3
+
 
 
 code :

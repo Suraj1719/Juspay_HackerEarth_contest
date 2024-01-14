@@ -2,6 +2,22 @@
 
 code : shortest time using Dijkstra's algorithm using Priority Queue
 
+Input :
+n=4
+2
+5
+7
+9
+e=4
+2 9 2
+7 2 3
+7 9 7
+9 5 1
+src=7
+dest=9
+
+    output : min time = 5
+
 import java.util.HashMap;
 import java.util.*;
 
